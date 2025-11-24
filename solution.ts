@@ -59,24 +59,24 @@ const person1 = new Person('John Doe', 30);
 // problem-4
 interface Item {
     title : string;
-    reting : number;
+   rating : number;
 }
 
 function filterByRating(Items: Item[]): Item[]{
-return Items.filter(item => item.reting >= 4)
+return Items.filter(item => item.rating >= 4)
 }
 
 const books: Item[] = [
-    {title: 'Book A', reting:4.5},
-    {title: 'Book B', reting:3.2},
-    {title: 'Book C', reting:5.0},
+    {title: 'Book A', rating:4.5},
+    {title: 'Book B', rating:3.2},
+    {title: 'Book C', rating:5.0},
 ]
 
 // console.log(filterByRating(books));
 
 // problem-5
 interface User {
-    in: number;
+    id: number;
     name: string;
     email: string;
     isActive : boolean;
